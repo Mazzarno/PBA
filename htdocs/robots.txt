@@ -1,0 +1,4 @@
+User-agent: Googlebot
+Disallow: 
+Allow: /
+Sitemap: https://www.asus.fr/event/Powered-by-ASUS/sitemap.xml
