@@ -1,6 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+    box-sizing: border-box;
+}
+
+
+/*
+.my-layouts-enter-active,
+.my-layouts-leave-active {
+  transition: opacity 0.5s;
+  
+}
+.my-layouts-enter,
+.my-layouts-leave-active {
+  opacity: 0;
+  background: black;
+}
+*/
+
 body,
 html {
     margin: 0 !important;
@@ -11,7 +29,8 @@ html {
 html,
 body,
 #app {
-    font-family: 'Segoe UI';
+    background: black;
+    font-family: 'Myriad';
     font-size: 16px !important;
     font-weight: normal;
     color: #fff;
@@ -32,15 +51,77 @@ body,
     overflow-y: hidden !important;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+    z-index: 60;
+}
 
-/* FONT 
+::-webkit-scrollbar-track {
+    background: #181717;
+    border-radius: 10px;
+    z-index: 60;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #B91C1C, #991B1B);
+    border-radius: 10px;
+    z-index: 60;
+}
+
+
+/* FONT */
 
 @font-face {
     font-family: 'Segoe UI';
-    src: url('~assets/font/Segoe UI.ttf');
+    src: url('~assets/font/Segoe-UI.ttf');
     font-weight: normal;
     font-display: swap;
-}*/
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('~assets/font/HelveticaNowDisplay-Light.ttf');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ROG FONT';
+    src: url('~assets/font/ROGFonts-Regular.ttf');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TUF FONT';
+    src: url('~assets/font/MACHINEN.TTF');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad';
+    src: url('~assets/font/Myriad-Pro-Regular.ttf');
+    font-weight: normal;
+    font-display: swap;
+}
+
+h1 {
+    font-family: 'ROG FONT';
+}
+
+h2 {
+    font-family: 'Helvetica';
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #ab9078, #503c2a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-family: 'TUF FONT';
+}
 
 .bg_index {
     background-color: transparent;
@@ -48,4 +129,20 @@ body,
     background-position: 0px 0px, 0% 100%;
     background-size: auto, cover;
     background-repeat: repeat, repeat;
+}
+
+.ROGBIGtitle {
+    border: 1px none #000;
+    background-image: linear-gradient(180deg, #ea1126, #cd131c 41%, #b90000);
+    opacity: 1;
+    font-family: 'ROG FONT';
+    color: #c60c12;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: none;
+    text-shadow: 3px 1px 0 rgb(253 0 0 / 47%);
+    white-space: normal;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

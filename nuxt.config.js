@@ -29,9 +29,12 @@ export default {
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: ['~/assets/css/styles.css', ],
-
+    layoutTransition: {
+        name: 'my-layouts',
+        mode: 'out-in'
+    },
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [],
+    plugins: ['~/plugins/vue-awesome-swiper.js', '~/plugins/directive.js'],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
@@ -40,6 +43,7 @@ export default {
     buildModules: [
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
+        'nuxt-gsap-module'
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
@@ -57,7 +61,11 @@ export default {
             },
         ]
     ],
-
+    gsap: {
+        extraPlugins: {
+            scrollTo: true,
+        },
+    },
     // Build Configuration: https://go.nuxtjs.dev/config-build
     generate: {
         dir: 'htdocs',
@@ -66,24 +74,29 @@ export default {
         subFolders: false,
         crawler: false,
     },
-    // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
+    build: {
+        publicPath: 'https://www.asus.fr/event/pba-test/',
+    },
+    router: {
+        base: '/event/pba-test/'
+    },
+
     robots: {
         UserAgent: '*',
         Allow: '/',
         UserAgent: 'Googlebot',
         Allow: '/',
-        Sitemap: 'https://www.asus.fr/event/Powered-by-ASUS/sitemap.xml'
+        Sitemap: 'https://www.asus.fr/event/pba-test/sitemap.xml'
     },
     sitemap: {
-        hostname: 'https://www.asus.fr/event/Powered-by-ASUS/',
+        hostname: 'https://www.asus.fr/event/pba-test/',
         Default: {
             changefreq: 'daily',
             priority: 1,
             lastmod: new Date()
         },
         routes: [{
-            url: 'https://www.asus.fr/event/Powered-by-ASUS/',
+            url: 'https://www.asus.fr/event/pba-test/',
             changefreq: 'daily',
             priority: 1,
             lastmod: new Date()

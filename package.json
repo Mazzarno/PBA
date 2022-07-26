@@ -19,6 +19,7 @@
     "nuxt": "^2.15.8",
     "nuxtjs-mdi-font": "^1.0.2",
     "vue": "^2.6.14",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0"
@@ -27,7 +28,10 @@
     "@nuxtjs/tailwindcss": "^4.2.1",
     "eslint-config-prettier": "^8.3.0",
     "nuxt-compress": "^5.0.0",
+    "nuxt-gsap-module": "^1.7.1",
     "postcss": "^8.4.4",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "sass": "^1.54.0",
+    "sass-loader": "^10.3.1"
   }
 }
