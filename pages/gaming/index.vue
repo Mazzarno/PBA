@@ -32,12 +32,46 @@
             ><img
               src="~/assets/img/aura-banner2x.jpg"
               alt=""
-              class="opacity-50"
+              class="opacity-50 w-full h-auto"
             />
-            <div class="absolute top-1/3 left-1/4 text-left w-2/4">
-              <p class="text-center text-2xl">Qu'est-ce que</p>
-              <h1 class="text-red-700 text-center text-4xl">POWERED BY ASUS</h1>
-              <p class="text-lg">
+            <div
+              class="
+                absolute
+                text-left
+                top-0
+                left-5
+                w-11/12
+                sm:top-8 sm:w-2/4 sm:left-1/4
+                md:top-8 md:w-2/4 md:left-1/4
+                lg:top-10 lg:w-2/3 lg:left-1/4
+                xl:w-2/4 xl:left-1/4 xl:top-1/3
+              "
+            >
+              <p
+                class="
+                  text-center
+                  xl:text-2xl
+                  lg:text-xl
+                  md:text-sm
+                  sm:text-xs
+                  text-xs
+                "
+              >
+                Qu'est-ce que
+              </p>
+              <h1
+                class="
+                  text-red-700 text-center
+                  xl:text-4xl
+                  lg:text-2xl
+                  md:text-sm
+                  sm:text-xs
+                  text-xs
+                "
+              >
+                POWERED BY ASUS
+              </h1>
+              <p class="xl:text-xl text-xs lg:text-base md:text-sm sm:text-xs">
                 Powered by ASUS s'adresse à ceux qui acceptent uniquement la
                 perfection. Nos équipes de recherche et développement à la
                 renommée mondiale sont entièrement dévoués à notre devise : à la
@@ -58,12 +92,41 @@
               alt=""
               class="opacity-50"
             />
-            <div class="absolute top-1/3 left-52 text-left w-2/4">
-              <h1 class="text-red-700 text-center text-4xl">
+            <div
+              class="
+                absolute
+                top-0
+                left-5
+                w-11/12
+                sm:top-8 sm:w-2/4 sm:left-1/4
+                md:top-8 md:w-2/4 md:left-1/4
+                lg:top-10 lg:w-2/3 lg:left-1/4
+                xl:w-2/4 xl:left-1/3 xl:top-52
+              "
+            >
+              <h1
+                class="
+                  text-red-700 text-center
+                  xl:text-4xl
+                  lg:text-2xl
+                  md:text-sm
+                  sm:text-xs
+                  text-xs
+                "
+              >
                 REPUBLIC OF GAMERS
               </h1>
-              <br />
-              <p class="text-left text-lg">
+              <br class="lg:relative hidden" />
+              <p
+                class="
+                  text-left
+                  xl:text-xl
+                  text-xs
+                  lg:text-base
+                  md:text-sm
+                  sm:text-xs
+                "
+              >
                 La technologie ne dort jamais, et l'action devrait suivre cet
                 exemple. À ceux qui veulent prendre le pouvoir : Republic of
                 Gamers vous attend. En perpétuelle innovation, ROG s'engage à
@@ -81,10 +144,42 @@
               alt=""
               class="opacity-50"
             />
-            <div class="absolute top-1/4 left-1/2 text-left w-1/3">
-              <h3 class="text-center text-6xl">TUF GAMING</h3>
-              <br />
-              <p class="text-left text-lg">
+            <div
+              class="
+                absolute
+                top-0
+                left-5
+                w-11/12
+                sm:top-8 sm:w-2/4 sm:left-1/4
+                md:top-8 md:w-2/4 md:left-1/4
+                lg:top-10 lg:w-2/3 lg:left-1/4
+                xl:w-1/3 xl:left-1/2 xl:top-1/4
+                text-left
+              "
+            >
+              <h3
+                class="
+                  text-center
+                  xl:text-6xl
+                  lg:text-4xl
+                  md:text-sm
+                  sm:text-xs
+                  text-xs
+                "
+              >
+                TUF GAMING
+              </h3>
+              <br class="lg:relative hidden" />
+              <p
+                class="
+                  text-left
+                  xl:text-xl
+                  text-xs
+                  lg:text-base
+                  md:text-sm
+                  sm:text-xs
+                "
+              >
                 TUF Gaming est la nouvelle arme des joueurs qui réclament un PC
                 gaming aux performances durables, stables et qualitatives. Nous
                 avons imaginé une vaste gamme de cartes mères, d'ordinateurs
@@ -92,8 +187,17 @@
                 casques, tandis que de nombreuses autres innovations
                 passionnantes sont en cours.
               </p>
-              <br />
-              <p class="text-left text-lg">
+              <br class="lg:relative hidden" />
+              <p
+                class="
+                  text-left
+                  xl:text-xl
+                  text-xs
+                  lg:text-base
+                  md:text-sm
+                  sm:text-xs
+                "
+              >
                 En plus d'afficher un style unique, chaque produit TUF a été
                 rigoureusement testé pour garantir stabilité et durabilité tout
                 en intégrant des fonctionnalités qui plairont aux joueurs. Nous
@@ -112,10 +216,23 @@
       <!-- Swiper directive -->
     </div>
     <div class="flex justify-center">
-      <div class="grid grid-cols-4 gap-0 justify-center mt-10">
+      <div
+        class="
+          grid grid-cols-1
+          sm:grid-cols-2
+          md:grid-cols-2
+          lg:grid-cols-4
+          gap-0
+          justify-center
+          mt-10
+        "
+      >
         <div
           @click="toCategorie()"
           class="
+            drop-shadow-md
+            hover:drop-shadow-2xl
+            rounded-md
             relative
             w-56
             bg-grey-700
@@ -135,6 +252,9 @@
         <div
           @click="toProduit()"
           class="
+            rounded-md
+            drop-shadow-md
+            hover:drop-shadow-2xl
             relative
             w-56
             bg-grey-700
@@ -154,6 +274,9 @@
         <div
           @click="toPartenariat()"
           class="
+            rounded-md
+            drop-shadow-md
+            hover:drop-shadow-2xl
             relative
             w-56
             bg-grey-700
@@ -161,6 +284,7 @@
             mx-5
             my-10
             p-5
+            mb-10
             duration-500
             transition
             ease-in-out
@@ -174,6 +298,9 @@
         <div
           @click="toVideo()"
           class="
+            rounded-md
+            drop-shadow-md
+            hover:drop-shadow-2xl
             relative
             w-56
             bg-grey-700
@@ -196,12 +323,23 @@
       ref="categorie"
       class="categorie flex flex-row justify-center mt-20 mb-10"
     >
-      <h1 class="text-red-700 text-center sm:text-7xl text-2xl ROGBIGtitle">
+      <h1
+        class="
+          text-red-700 text-center
+          xl:text-7xl
+          sm:text-4xl
+          lg:text-6xl
+          md:text-5xl
+          text-lg
+          leading-none
+          ROGBIGtitle
+        "
+      >
         CATÉGORIES DE JEU
       </h1>
     </div>
     <div class="flex justify-center mt-10">
-      <div class="grid grid-cols-3 gap-0 justify-center m-10">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-0 justify-center m-10">
         <nuxt-link to="/gaming/fps">
           <div
             class="
@@ -341,12 +479,23 @@
       </div>
     </div>
     <div ref="produit" class="produit flex flex-row justify-center mt-20">
-      <h1 class="text-red-700 text-center sm:text-7xl text-2xl ROGBIGtitle">
+      <h1
+        class="
+          text-red-700 text-center
+          xl:text-7xl
+          sm:text-4xl
+          lg:text-6xl
+          md:text-5xl
+          text-lg
+          leading-none
+          ROGBIGtitle
+        "
+      >
         PRODUITS
       </h1>
     </div>
     <div class="flex justify-center mt-10">
-      <div class="grid grid-cols-3 gap-4 justify-center m-10">
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center m-10">
         <div
           class="
             duration-500
@@ -493,10 +642,22 @@
       ref="partenariat"
       class="partenariat flex flex-row justify-center mt-20"
     >
-      <h1 class="text-red-700 text-center sm:text-7xl text-2xl ROGBIGtitle">
+      <h1
+        class="
+          text-red-700 text-center
+          xl:text-7xl
+          sm:text-4xl
+          lg:text-6xl
+          md:text-5xl
+          text-lg
+          leading-none
+          ROGBIGtitle
+        "
+      >
         PARTENARIATS
       </h1>
     </div>
+
     <div class="flex justify-center mt-20">
       <div class="w-full relative overflow-hidden">
         <Transition
@@ -514,21 +675,31 @@
             class="
               transition-all
               transform
-              grid grid-cols-2
+              grid
+              md:flex-col
+              lg:grid-cols-2
               gap-0
               justify-center
             "
           >
-            <div class="flex justify-end">
+            <div class="container flex lg:justify-end justify-center">
               <img
                 src="~/assets/img/absolute2x.png"
-                height="500"
-                width="500"
+                height="400"
+                width="auto"
                 alt=""
               />
             </div>
 
-            <div class="flex flex-col justify-start">
+            <div
+              class="
+                container
+                flex-col
+                grid-col-1
+                lg:justify-start
+                justify-center
+              "
+            >
               <img
                 src="~/assets/img/Absolutepc-logo_gris.png"
                 height="auto"
@@ -580,8 +751,8 @@
             <div class="flex justify-end">
               <img
                 src="~/assets/img/pba-pc-specialist.png"
-                height="500"
-                width="500"
+                height="400"
+                width="auto"
               />
             </div>
 
@@ -589,7 +760,7 @@
               <img
                 src="~/assets/img/pcspecialist.png"
                 height="auto"
-                width="450"
+                width="400"
                 class="mb-10"
               />
               <p class="text-left text-lg w-3/4 mb-10">
@@ -638,8 +809,8 @@
             <div class="flex justify-end">
               <img
                 src="~/assets/img/pc-gamer-shiny-aquarius.png"
-                height="500"
-                width="500"
+                height="auto"
+                width="400"
                 alt=""
               />
             </div>
@@ -695,33 +866,32 @@
           >
             <div class="flex justify-end">
               <img
-                src="~/assets/img/absolute2x.png"
+                src="~/assets/img/spécial-pc-gamer-eos-powered-by-asus-rtx-3060.png"
                 height="500"
                 width="500"
                 alt=""
               />
             </div>
+            https://asus-my.sharepoint.com/:u:/p/tom4_tang/EVgTOCsmoQpCrEl3YwHTt3UBCT33Pmls9Ldh3KooJ15aWg
 
             <div class="flex flex-col justify-start">
               <img
-                src="~/assets/img/Absolutepc-logo_gris.png"
+                src="~/assets/img/powerlab-logo.jpg"
                 height="auto"
-                width="450"
+                width="400"
                 alt=""
                 class="mb-10"
               />
               <p class="text-left text-lg w-3/4 mb-10">
-                Célèbre boutique d’informatique située dans le 12ème
-                arrondissement de Paris, Absolute PC a été parmi les premiers à
-                proposer des machines Powered by ASUS. Véritable artisan du
-                Hardware, leur métier est avant tout la conception et
-                l'assemblage de PC sur-mesure pour gamers et professionnels
-                exigeants. Ils proposent également un service de vente de
-                composants informatiques et de maintenance/réparation pour vos
-                ordinateurs.
+                Powerlab est votre atelier performances. Située à Paris et
+                composée d’une équipe de passionnés, nous configurerons votre
+                prochain PC Gamer. Votre satisfaction a toujours été la clé de
+                notre succès. Et c’est pourquoi, votre projet, c’est notre
+                responsabilité !
               </p>
-              <nuxt-link
-                to=""
+              <a
+                href="https://powerlab.fr/71-pc-powered-by-asus"
+                target="_blank"
                 class="
                   ensavoirplus
                   duration-500
@@ -735,15 +905,17 @@
                   hover:-translate-y-3
                   hover:scale-110
                 "
-                ><p>EN SAVOIR PLUS4</p></nuxt-link
-              >
+                ><p>EN SAVOIR PLUS</p>
+              </a>
             </div>
           </section>
         </Transition>
       </div>
     </div>
     <div class="flex justify-center mt-5">
-      <div class="grid grid-cols-4 justify-center">
+      <div
+        class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 justify-center"
+      >
         <img
           @click="partenaire = 1"
           src="~/assets/img/Absolutepc-logo_gris2.png"
@@ -791,7 +963,7 @@
         />
         <img
           @click="partenaire = 4"
-          src="~/assets/img/pcspecialist.png"
+          src="~/assets/img/powerlab-logo.jpg"
           height="70"
           width="220"
           alt=""
@@ -807,7 +979,18 @@
       </div>
     </div>
     <div ref="video" class="video flex flex-row justify-center mt-20 mb-5">
-      <h1 class="text-red-700 text-center sm:text-7xl text-2xl ROGBIGtitle">
+      <h1
+        class="
+          text-red-700 text-center
+          xl:text-7xl
+          sm:text-4xl
+          lg:text-6xl
+          md:text-5xl
+          text-lg
+          leading-none
+          ROGBIGtitle
+        "
+      >
         VIDÉOS
       </h1>
     </div>

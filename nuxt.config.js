@@ -33,6 +33,8 @@ export default {
         name: 'my-layouts',
         mode: 'out-in'
     },
+
+    loading: '~/components/loading.vue',
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: ['~/plugins/vue-awesome-swiper.js', '~/plugins/directive.js'],
 

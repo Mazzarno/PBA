@@ -14,7 +14,7 @@ export default {
     GamingFooter,
   },
   transition: {
-    name: 'home',
+    name: 'my-layouts',
     mode: 'out-in',
   },
 }
